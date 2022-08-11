@@ -8,41 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface OffsetConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#base_rfc3339 Offset#base_rfc3339}
   */
   readonly baseRfc3339?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#id Offset#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
+  * Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_days Offset#offset_days}
   */
   readonly offsetDays?: number;
   /**
+  *  Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_hours Offset#offset_hours}
   */
   readonly offsetHours?: number;
   /**
+  * Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_minutes Offset#offset_minutes}
   */
   readonly offsetMinutes?: number;
   /**
+  * Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_months Offset#offset_months}
   */
   readonly offsetMonths?: number;
   /**
+  * Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_seconds Offset#offset_seconds}
   */
   readonly offsetSeconds?: number;
   /**
+  * Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_years Offset#offset_years}
   */
   readonly offsetYears?: number;
   /**
+  * Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. See [the main provider documentation](../index.md) for more information.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#triggers Offset#triggers}
   */
   readonly triggers?: { [key: string]: string };
@@ -74,7 +83,7 @@ export class Offset extends cdktf.TerraformResource {
       terraformResourceType: 'time_offset',
       terraformGeneratorMetadata: {
         providerName: 'time',
-        providerVersion: '0.7.2',
+        providerVersion: '0.8.0',
         providerVersionConstraint: '~> 0.7'
       },
       provider: config.provider,
@@ -86,7 +95,6 @@ export class Offset extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._baseRfc3339 = config.baseRfc3339;
-    this._id = config.id;
     this._offsetDays = config.offsetDays;
     this._offsetHours = config.offsetHours;
     this._offsetMinutes = config.offsetMinutes;
@@ -126,20 +134,9 @@ export class Offset extends cdktf.TerraformResource {
     return this.getNumberAttribute('hour');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // minute - computed: true, optional: false, required: false
@@ -291,7 +288,6 @@ export class Offset extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       base_rfc3339: cdktf.stringToTerraform(this._baseRfc3339),
-      id: cdktf.stringToTerraform(this._id),
       offset_days: cdktf.numberToTerraform(this._offsetDays),
       offset_hours: cdktf.numberToTerraform(this._offsetHours),
       offset_minutes: cdktf.numberToTerraform(this._offsetMinutes),

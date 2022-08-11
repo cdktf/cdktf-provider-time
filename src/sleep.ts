@@ -8,21 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface SleepConfig extends cdktf.TerraformMetaArguments {
   /**
+  * [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource creation. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#create_duration Sleep#create_duration}
   */
   readonly createDuration?: string;
   /**
+  * [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource destroy. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. This value or any updates to it must be successfully applied into the Terraform state before destroying this resource to take effect.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#destroy_duration Sleep#destroy_duration}
   */
   readonly destroyDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#id Sleep#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
+  * (Optional) Arbitrary map of values that, when changed, will run any creation or destroy delays again. See [the main provider documentation](../index.md) for more information.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#triggers Sleep#triggers}
   */
   readonly triggers?: { [key: string]: string };
@@ -54,7 +53,7 @@ export class Sleep extends cdktf.TerraformResource {
       terraformResourceType: 'time_sleep',
       terraformGeneratorMetadata: {
         providerName: 'time',
-        providerVersion: '0.7.2',
+        providerVersion: '0.8.0',
         providerVersionConstraint: '~> 0.7'
       },
       provider: config.provider,
@@ -67,7 +66,6 @@ export class Sleep extends cdktf.TerraformResource {
     });
     this._createDuration = config.createDuration;
     this._destroyDuration = config.destroyDuration;
-    this._id = config.id;
     this._triggers = config.triggers;
   }
 
@@ -107,20 +105,9 @@ export class Sleep extends cdktf.TerraformResource {
     return this._destroyDuration;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // triggers - computed: false, optional: true, required: false
@@ -147,7 +134,6 @@ export class Sleep extends cdktf.TerraformResource {
     return {
       create_duration: cdktf.stringToTerraform(this._createDuration),
       destroy_duration: cdktf.stringToTerraform(this._destroyDuration),
-      id: cdktf.stringToTerraform(this._id),
       triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
   }

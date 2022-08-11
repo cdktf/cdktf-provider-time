@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-time.Offset.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.resetBaseRfc3339">resetBaseRfc3339</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Offset.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.resetOffsetDays">resetOffsetDays</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.resetOffsetHours">resetOffsetHours</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.resetOffsetMinutes">resetOffsetMinutes</a></code> | *No description.* |
@@ -268,12 +267,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetBaseRfc3339(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-time.Offset.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetOffsetDays` <a name="resetOffsetDays" id="@cdktf/provider-time.Offset.resetOffsetDays"></a>
 
 ```typescript
@@ -376,6 +369,7 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Offset.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.day">day</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.hour">hour</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.Offset.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.minute">minute</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.month">month</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.rfc3339">rfc3339</a></code> | <code>string</code> | *No description.* |
@@ -383,7 +377,6 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Offset.property.unix">unix</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.year">year</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.baseRfc3339Input">baseRfc3339Input</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Offset.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetDaysInput">offsetDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetHoursInput">offsetHoursInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetMinutesInput">offsetMinutesInput</a></code> | <code>number</code> | *No description.* |
@@ -392,7 +385,6 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetYearsInput">offsetYearsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.triggersInput">triggersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.baseRfc3339">baseRfc3339</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Offset.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetDays">offsetDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetHours">offsetHours</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Offset.property.offsetMinutes">offsetMinutes</a></code> | <code>number</code> | *No description.* |
@@ -565,6 +557,16 @@ public readonly hour: number;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Offset.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `minute`<sup>Required</sup> <a name="minute" id="@cdktf/provider-time.Offset.property.minute"></a>
 
 ```typescript
@@ -629,16 +631,6 @@ public readonly year: number;
 
 ```typescript
 public readonly baseRfc3339Input: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-time.Offset.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -719,16 +711,6 @@ public readonly triggersInput: {[ key: string ]: string};
 
 ```typescript
 public readonly baseRfc3339: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Offset.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -887,7 +869,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-time.Rotating.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Rotating.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.resetRfc3339">resetRfc3339</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.resetRotationDays">resetRotationDays</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.resetRotationHours">resetRotationHours</a></code> | *No description.* |
@@ -1083,12 +1064,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-time.Rotating.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetRfc3339` <a name="resetRfc3339" id="@cdktf/provider-time.Rotating.resetRfc3339"></a>
 
 ```typescript
@@ -1197,12 +1172,12 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Rotating.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.day">day</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.hour">hour</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.Rotating.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.minute">minute</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.month">month</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.second">second</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.unix">unix</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.year">year</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Rotating.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rfc3339Input">rfc3339Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rotationDaysInput">rotationDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rotationHoursInput">rotationHoursInput</a></code> | <code>number</code> | *No description.* |
@@ -1211,7 +1186,6 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Rotating.property.rotationRfc3339Input">rotationRfc3339Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rotationYearsInput">rotationYearsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.triggersInput">triggersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Rotating.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rfc3339">rfc3339</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rotationDays">rotationDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Rotating.property.rotationHours">rotationHours</a></code> | <code>number</code> | *No description.* |
@@ -1385,6 +1359,16 @@ public readonly hour: number;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Rotating.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `minute`<sup>Required</sup> <a name="minute" id="@cdktf/provider-time.Rotating.property.minute"></a>
 
 ```typescript
@@ -1432,16 +1416,6 @@ public readonly year: number;
 ```
 
 - *Type:* number
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-time.Rotating.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -1522,16 +1496,6 @@ public readonly triggersInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Rotating.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -1699,7 +1663,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-time.Sleep.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.resetCreateDuration">resetCreateDuration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.resetDestroyDuration">resetDestroyDuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Sleep.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.resetTriggers">resetTriggers</a></code> | *No description.* |
 
 ---
@@ -1900,12 +1863,6 @@ public resetCreateDuration(): void
 public resetDestroyDuration(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-time.Sleep.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetTriggers` <a name="resetTriggers" id="@cdktf/provider-time.Sleep.resetTriggers"></a>
 
 ```typescript
@@ -1970,13 +1927,12 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Sleep.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.Sleep.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.createDurationInput">createDurationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.destroyDurationInput">destroyDurationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Sleep.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.triggersInput">triggersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.createDuration">createDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.destroyDuration">destroyDuration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Sleep.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Sleep.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
@@ -2123,6 +2079,16 @@ public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemote
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Sleep.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `createDurationInput`<sup>Optional</sup> <a name="createDurationInput" id="@cdktf/provider-time.Sleep.property.createDurationInput"></a>
 
 ```typescript
@@ -2137,16 +2103,6 @@ public readonly createDurationInput: string;
 
 ```typescript
 public readonly destroyDurationInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-time.Sleep.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -2177,16 +2133,6 @@ public readonly createDuration: string;
 
 ```typescript
 public readonly destroyDuration: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Sleep.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -2285,7 +2231,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-time.Static.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Static.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.resetRfc3339">resetRfc3339</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.resetTriggers">resetTriggers</a></code> | *No description.* |
 
@@ -2475,12 +2420,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-time.Static.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetRfc3339` <a name="resetRfc3339" id="@cdktf/provider-time.Static.resetRfc3339"></a>
 
 ```typescript
@@ -2553,15 +2492,14 @@ Any object.
 | <code><a href="#@cdktf/provider-time.Static.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.day">day</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.hour">hour</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.Static.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.minute">minute</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.month">month</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.second">second</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.unix">unix</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.year">year</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Static.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.rfc3339Input">rfc3339Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.triggersInput">triggersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.Static.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.rfc3339">rfc3339</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.Static.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -2729,6 +2667,16 @@ public readonly hour: number;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Static.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `minute`<sup>Required</sup> <a name="minute" id="@cdktf/provider-time.Static.property.minute"></a>
 
 ```typescript
@@ -2779,16 +2727,6 @@ public readonly year: number;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-time.Static.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `rfc3339Input`<sup>Optional</sup> <a name="rfc3339Input" id="@cdktf/provider-time.Static.property.rfc3339Input"></a>
 
 ```typescript
@@ -2806,16 +2744,6 @@ public readonly triggersInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-time.Static.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -3185,15 +3113,14 @@ const offsetConfig: OffsetConfig = { ... }
 | <code><a href="#@cdktf/provider-time.OffsetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.OffsetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.OffsetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.baseRfc3339">baseRfc3339</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#base_rfc3339 Offset#base_rfc3339}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#id Offset#id}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetDays">offsetDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_days Offset#offset_days}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetHours">offsetHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_hours Offset#offset_hours}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetMinutes">offsetMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_minutes Offset#offset_minutes}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetMonths">offsetMonths</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_months Offset#offset_months}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetSeconds">offsetSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_seconds Offset#offset_seconds}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetYears">offsetYears</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_years Offset#offset_years}. |
-| <code><a href="#@cdktf/provider-time.OffsetConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#triggers Offset#triggers}. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.baseRfc3339">baseRfc3339</a></code> | <code>string</code> | Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetDays">offsetDays</a></code> | <code>number</code> | Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetHours">offsetHours</a></code> | <code>number</code> | Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetMinutes">offsetMinutes</a></code> | <code>number</code> | Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetMonths">offsetMonths</a></code> | <code>number</code> | Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetSeconds">offsetSeconds</a></code> | <code>number</code> | Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.offsetYears">offsetYears</a></code> | <code>number</code> | Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.OffsetConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. |
 
 ---
 
@@ -3275,22 +3202,9 @@ public readonly baseRfc3339: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#base_rfc3339 Offset#base_rfc3339}.
+Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-time.OffsetConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#id Offset#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#base_rfc3339 Offset#base_rfc3339}
 
 ---
 
@@ -3302,7 +3216,9 @@ public readonly offsetDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_days Offset#offset_days}.
+Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_days Offset#offset_days}
 
 ---
 
@@ -3314,7 +3230,9 @@ public readonly offsetHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_hours Offset#offset_hours}.
+Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_hours Offset#offset_hours}
 
 ---
 
@@ -3326,7 +3244,9 @@ public readonly offsetMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_minutes Offset#offset_minutes}.
+Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_minutes Offset#offset_minutes}
 
 ---
 
@@ -3338,7 +3258,9 @@ public readonly offsetMonths: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_months Offset#offset_months}.
+Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_months Offset#offset_months}
 
 ---
 
@@ -3350,7 +3272,9 @@ public readonly offsetSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_seconds Offset#offset_seconds}.
+Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_seconds Offset#offset_seconds}
 
 ---
 
@@ -3362,7 +3286,9 @@ public readonly offsetYears: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_years Offset#offset_years}.
+Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_years Offset#offset_years}
 
 ---
 
@@ -3374,7 +3300,11 @@ public readonly triggers: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#triggers Offset#triggers}.
+Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved.
+
+See [the main provider documentation](../index.md) for more information.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#triggers Offset#triggers}
 
 ---
 
@@ -3399,15 +3329,14 @@ const rotatingConfig: RotatingConfig = { ... }
 | <code><a href="#@cdktf/provider-time.RotatingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.RotatingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.RotatingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#id Rotating#id}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rfc3339">rfc3339</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rfc3339 Rotating#rfc3339}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationDays">rotationDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_days Rotating#rotation_days}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationHours">rotationHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_hours Rotating#rotation_hours}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationMinutes">rotationMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_minutes Rotating#rotation_minutes}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationMonths">rotationMonths</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_months Rotating#rotation_months}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationRfc3339">rotationRfc3339</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationYears">rotationYears</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_years Rotating#rotation_years}. |
-| <code><a href="#@cdktf/provider-time.RotatingConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#triggers Rotating#triggers}. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rfc3339">rfc3339</a></code> | <code>string</code> | Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationDays">rotationDays</a></code> | <code>number</code> | Number of days to add to the base timestamp to configure the rotation timestamp. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationHours">rotationHours</a></code> | <code>number</code> | Number of hours to add to the base timestamp to configure the rotation timestamp. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationMinutes">rotationMinutes</a></code> | <code>number</code> | Number of minutes to add to the base timestamp to configure the rotation timestamp. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationMonths">rotationMonths</a></code> | <code>number</code> | Number of months to add to the base timestamp to configure the rotation timestamp. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationRfc3339">rotationRfc3339</a></code> | <code>string</code> | Configure the rotation timestamp with an [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format of the offset timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.rotationYears">rotationYears</a></code> | <code>number</code> | Number of years to add to the base timestamp to configure the rotation timestamp. |
+| <code><a href="#@cdktf/provider-time.RotatingConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. |
 
 ---
 
@@ -3481,21 +3410,6 @@ public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemote
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-time.RotatingConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#id Rotating#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `rfc3339`<sup>Optional</sup> <a name="rfc3339" id="@cdktf/provider-time.RotatingConfig.property.rfc3339"></a>
 
 ```typescript
@@ -3504,7 +3418,9 @@ public readonly rfc3339: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rfc3339 Rotating#rfc3339}.
+Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rfc3339 Rotating#rfc3339}
 
 ---
 
@@ -3516,7 +3432,11 @@ public readonly rotationDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_days Rotating#rotation_days}.
+Number of days to add to the base timestamp to configure the rotation timestamp.
+
+When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_days Rotating#rotation_days}
 
 ---
 
@@ -3528,7 +3448,11 @@ public readonly rotationHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_hours Rotating#rotation_hours}.
+Number of hours to add to the base timestamp to configure the rotation timestamp.
+
+When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_hours Rotating#rotation_hours}
 
 ---
 
@@ -3540,7 +3464,11 @@ public readonly rotationMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_minutes Rotating#rotation_minutes}.
+Number of minutes to add to the base timestamp to configure the rotation timestamp.
+
+When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_minutes Rotating#rotation_minutes}
 
 ---
 
@@ -3552,7 +3480,11 @@ public readonly rotationMonths: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_months Rotating#rotation_months}.
+Number of months to add to the base timestamp to configure the rotation timestamp.
+
+When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_months Rotating#rotation_months}
 
 ---
 
@@ -3564,7 +3496,9 @@ public readonly rotationRfc3339: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}.
+Configure the rotation timestamp with an [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format of the offset timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}
 
 ---
 
@@ -3576,7 +3510,11 @@ public readonly rotationYears: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_years Rotating#rotation_years}.
+Number of years to add to the base timestamp to configure the rotation timestamp.
+
+When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_years Rotating#rotation_years}
 
 ---
 
@@ -3588,7 +3526,11 @@ public readonly triggers: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#triggers Rotating#triggers}.
+Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved.
+
+These conditions recreate the resource in addition to other rotation arguments. See [the main provider documentation](../index.md) for more information.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#triggers Rotating#triggers}
 
 ---
 
@@ -3613,10 +3555,9 @@ const sleepConfig: SleepConfig = { ... }
 | <code><a href="#@cdktf/provider-time.SleepConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.SleepConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.SleepConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.SleepConfig.property.createDuration">createDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#create_duration Sleep#create_duration}. |
-| <code><a href="#@cdktf/provider-time.SleepConfig.property.destroyDuration">destroyDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#destroy_duration Sleep#destroy_duration}. |
-| <code><a href="#@cdktf/provider-time.SleepConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#id Sleep#id}. |
-| <code><a href="#@cdktf/provider-time.SleepConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#triggers Sleep#triggers}. |
+| <code><a href="#@cdktf/provider-time.SleepConfig.property.createDuration">createDuration</a></code> | <code>string</code> | [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource creation. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. |
+| <code><a href="#@cdktf/provider-time.SleepConfig.property.destroyDuration">destroyDuration</a></code> | <code>string</code> | [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource destroy. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. This value or any updates to it must be successfully applied into the Terraform state before destroying this resource to take effect. |
+| <code><a href="#@cdktf/provider-time.SleepConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | (Optional) Arbitrary map of values that, when changed, will run any creation or destroy delays again. |
 
 ---
 
@@ -3698,7 +3639,9 @@ public readonly createDuration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#create_duration Sleep#create_duration}.
+[Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource creation. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#create_duration Sleep#create_duration}
 
 ---
 
@@ -3710,22 +3653,9 @@ public readonly destroyDuration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#destroy_duration Sleep#destroy_duration}.
+[Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource destroy. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. This value or any updates to it must be successfully applied into the Terraform state before destroying this resource to take effect.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-time.SleepConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#id Sleep#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#destroy_duration Sleep#destroy_duration}
 
 ---
 
@@ -3737,7 +3667,11 @@ public readonly triggers: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#triggers Sleep#triggers}.
+(Optional) Arbitrary map of values that, when changed, will run any creation or destroy delays again.
+
+See [the main provider documentation](../index.md) for more information.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/sleep#triggers Sleep#triggers}
 
 ---
 
@@ -3762,9 +3696,8 @@ const staticConfig: StaticConfig = { ... }
 | <code><a href="#@cdktf/provider-time.StaticConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.StaticConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.StaticConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.StaticConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#id Static#id}. |
-| <code><a href="#@cdktf/provider-time.StaticConfig.property.rfc3339">rfc3339</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#rfc3339 Static#rfc3339}. |
-| <code><a href="#@cdktf/provider-time.StaticConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#triggers Static#triggers}. |
+| <code><a href="#@cdktf/provider-time.StaticConfig.property.rfc3339">rfc3339</a></code> | <code>string</code> | Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time. |
+| <code><a href="#@cdktf/provider-time.StaticConfig.property.triggers">triggers</a></code> | <code>{[ key: string ]: string}</code> | Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. |
 
 ---
 
@@ -3838,21 +3771,6 @@ public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemote
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-time.StaticConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#id Static#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `rfc3339`<sup>Optional</sup> <a name="rfc3339" id="@cdktf/provider-time.StaticConfig.property.rfc3339"></a>
 
 ```typescript
@@ -3861,7 +3779,9 @@ public readonly rfc3339: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#rfc3339 Static#rfc3339}.
+Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#rfc3339 Static#rfc3339}
 
 ---
 
@@ -3873,7 +3793,11 @@ public readonly triggers: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#triggers Static#triggers}.
+Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved.
+
+See [the main provider documentation](../index.md) for more information.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#triggers Static#triggers}
 
 ---
 
