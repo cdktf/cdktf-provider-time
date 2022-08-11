@@ -41,7 +41,7 @@ export class TimeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'time',
       terraformGeneratorMetadata: {
         providerName: 'time',
-        providerVersion: '0.7.2',
+        providerVersion: '0.8.0',
         providerVersionConstraint: '~> 0.7'
       },
       terraformProviderSource: 'hashicorp/time'
