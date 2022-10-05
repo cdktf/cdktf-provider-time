@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-time-go`](https://github.com/hashicorp/cdktf-provider-time-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-time-go`](https://github.com/cdktf/cdktf-provider-time-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-time-go/time`
+`go get github.com/cdktf/cdktf-provider-time-go/time`
 
 ## Docs
 
