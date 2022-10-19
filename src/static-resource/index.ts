@@ -6,17 +6,17 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StaticConfig extends cdktf.TerraformMetaArguments {
+export interface StaticResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#rfc3339 Static#rfc3339}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#rfc3339 StaticResource#rfc3339}
   */
   readonly rfc3339?: string;
   /**
   * Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. See [the main provider documentation](../index.md) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#triggers Static#triggers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#triggers StaticResource#triggers}
   */
   readonly triggers?: { [key: string]: string };
 }
@@ -24,7 +24,7 @@ export interface StaticConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/time/r/static time_static}
 */
-export class Static extends cdktf.TerraformResource {
+export class StaticResource extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class Static extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options StaticConfig = {}
+  * @param options StaticResourceConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: StaticConfig = {}) {
+  public constructor(scope: Construct, id: string, config: StaticResourceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'time_static',
       terraformGeneratorMetadata: {
         providerName: 'time',
-        providerVersion: '0.8.0',
+        providerVersion: '0.9.0',
         providerVersionConstraint: '~> 0.7'
       },
       provider: config.provider,

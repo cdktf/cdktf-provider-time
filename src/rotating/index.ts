@@ -83,7 +83,7 @@ export class Rotating extends cdktf.TerraformResource {
       terraformResourceType: 'time_rotating',
       terraformGeneratorMetadata: {
         providerName: 'time',
-        providerVersion: '0.8.0',
+        providerVersion: '0.9.0',
         providerVersionConstraint: '~> 0.7'
       },
       provider: config.provider,
