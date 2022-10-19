@@ -847,7 +847,7 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-"cdktf-cli@>=0.12.2 <0.14.0":
+cdktf-cli@^0.13.0:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.13.1.tgz#38f851d5fb58fe5eb920111286db62d53090126d"
   integrity sha512-p8R0FTuCxrOEHC6JB2v8zTlK5YNJQBCGdv9lr+760YkImN1YJ+f9gYicd/1Xr6ZYgUOS2ExWENf+9c7Mz1CsWA==
@@ -872,7 +872,7 @@ case@^1.6.3:
     yargs "^17.5"
     yoga-layout-prebuilt "^1.10.0"
 
-cdktf@0.13.1, "cdktf@>=0.12.2 <0.14.0":
+cdktf@0.13.1, cdktf@^0.13.0:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.13.1.tgz#8337552bdf48c237b5dda6d1ec350cb8c336b773"
   integrity sha512-exCUk6mzamu0VLZrn3aDlbR2fejPTeyJtz5bssCwnwJN8gNRkiEw7LPWja6zPESNzFXHP0ccHMwpHiJYR7H5qA==
