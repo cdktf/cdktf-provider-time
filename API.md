@@ -314,6 +314,8 @@ public resetTriggers(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-time.offset.Offset.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-time.offset.Offset.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.offset.Offset.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -346,6 +348,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-time.offset.Offset.isTerraformElement"></a>
+
+```typescript
+import { offset } from '@cdktf/provider-time'
+
+offset.Offset.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.offset.Offset.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-time.offset.Offset.isTerraformResource"></a>
+
+```typescript
+import { offset } from '@cdktf/provider-time'
+
+offset.Offset.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.offset.Offset.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1117,6 +1147,8 @@ public resetTriggers(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-time.rotating.Rotating.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.rotating.Rotating.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1149,6 +1181,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-time.rotating.Rotating.isTerraformElement"></a>
+
+```typescript
+import { rotating } from '@cdktf/provider-time'
+
+rotating.Rotating.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.rotating.Rotating.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-time.rotating.Rotating.isTerraformResource"></a>
+
+```typescript
+import { rotating } from '@cdktf/provider-time'
+
+rotating.Rotating.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.rotating.Rotating.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1874,6 +1934,8 @@ public resetTriggers(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-time.sleep.Sleep.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-time.sleep.Sleep.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.sleep.Sleep.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1906,6 +1968,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-time.sleep.Sleep.isTerraformElement"></a>
+
+```typescript
+import { sleep } from '@cdktf/provider-time'
+
+sleep.Sleep.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.sleep.Sleep.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-time.sleep.Sleep.isTerraformResource"></a>
+
+```typescript
+import { sleep } from '@cdktf/provider-time'
+
+sleep.Sleep.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.sleep.Sleep.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2437,6 +2527,8 @@ public resetTriggers(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-time.staticResource.StaticResource.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-time.staticResource.StaticResource.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.staticResource.StaticResource.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2469,6 +2561,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-time.staticResource.StaticResource.isTerraformElement"></a>
+
+```typescript
+import { staticResource } from '@cdktf/provider-time'
+
+staticResource.StaticResource.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.staticResource.StaticResource.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-time.staticResource.StaticResource.isTerraformResource"></a>
+
+```typescript
+import { staticResource } from '@cdktf/provider-time'
+
+staticResource.StaticResource.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.staticResource.StaticResource.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2918,6 +3038,8 @@ public resetAlias(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-time.provider.TimeProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-time.provider.TimeProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.provider.TimeProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -2950,6 +3072,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-time.provider.TimeProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-time'
+
+provider.TimeProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.provider.TimeProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-time.provider.TimeProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-time'
+
+provider.TimeProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-time.provider.TimeProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
