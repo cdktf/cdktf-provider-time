@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/time time}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.provider.TimeProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v5/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
 
 provider.NewTimeProvider(scope Construct, id *string, config TimeProviderConfig) TimeProvider
 ```
@@ -143,7 +143,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.provider.TimeProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v5/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
 
 provider.TimeProvider_IsConstruct(x interface{}) *bool
 ```
@@ -175,7 +175,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.provider.TimeProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v5/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
 
 provider.TimeProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -189,7 +189,7 @@ provider.TimeProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-time.provider.TimeProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v5/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
 
 provider.TimeProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.provider.TimeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v5/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
 
 &provider.TimeProviderConfig {
 	Alias: *string,
