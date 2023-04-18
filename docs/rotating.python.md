@@ -1,3 +1,7 @@
+# `time_rotating`
+
+Refer to the Terraform Registory for docs: [`time_rotating`](https://www.terraform.io/docs/providers/time/r/rotating).
+
 # `rotating` Submodule <a name="`rotating` Submodule" id="@cdktf/provider-time.rotating"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

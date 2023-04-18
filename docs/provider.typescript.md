@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`time`](https://www.terraform.io/docs/providers/time).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-time.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
