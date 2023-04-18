@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/time/r/static
+// https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface StaticResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#rfc3339 StaticResource#rfc3339}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static#rfc3339 StaticResource#rfc3339}
   */
   readonly rfc3339?: string;
   /**
   * Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. See [the main provider documentation](../index.md) for more information.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/static#triggers StaticResource#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static#triggers StaticResource#triggers}
   */
   readonly triggers?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/time/r/static time_static}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static time_static}
 */
 export class StaticResource extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class StaticResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/time/r/static time_static} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static time_static} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

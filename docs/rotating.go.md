@@ -1,6 +1,6 @@
 # `time_rotating`
 
-Refer to the Terraform Registory for docs: [`time_rotating`](https://www.terraform.io/docs/providers/time/r/rotating).
+Refer to the Terraform Registory for docs: [`time_rotating`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating).
 
 # `rotating` Submodule <a name="`rotating` Submodule" id="@cdktf/provider-time.rotating"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`time_rotating`](https://www.terrafo
 
 ### Rotating <a name="Rotating" id="@cdktf/provider-time.rotating.Rotating"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/time/r/rotating time_rotating}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating time_rotating}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.rotating.Rotating.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.NewRotating(scope Construct, id *string, config RotatingConfig) Rotating
 ```
@@ -326,7 +326,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.rotating.Rotating.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.rotating.Rotating.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ rotating.Rotating_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-time.rotating.Rotating.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ rotating.Rotating_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.rotating.Rotating.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.rotating.Rotating.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.Rotating.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -513,10 +513,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-time.rotating.Rotating.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -835,11 +835,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.rotating.RotatingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 &rotating.RotatingConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -861,7 +861,7 @@ import "github.com/cdktf/cdktf-provider-time-go/time/v6/rotating"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-time.rotating.RotatingConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.rotating.RotatingConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.rotating.RotatingConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.RotatingConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.RotatingConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.rotating.RotatingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -891,10 +891,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-time.rotating.RotatingConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -958,7 +958,7 @@ Rfc3339 *string
 
 Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rfc3339 Rotating#rfc3339}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rfc3339 Rotating#rfc3339}
 
 ---
 
@@ -974,7 +974,7 @@ Number of days to add to the base timestamp to configure the rotation timestamp.
 
 When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_days Rotating#rotation_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rotation_days Rotating#rotation_days}
 
 ---
 
@@ -990,7 +990,7 @@ Number of hours to add to the base timestamp to configure the rotation timestamp
 
 When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_hours Rotating#rotation_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rotation_hours Rotating#rotation_hours}
 
 ---
 
@@ -1006,7 +1006,7 @@ Number of minutes to add to the base timestamp to configure the rotation timesta
 
 When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_minutes Rotating#rotation_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rotation_minutes Rotating#rotation_minutes}
 
 ---
 
@@ -1022,7 +1022,7 @@ Number of months to add to the base timestamp to configure the rotation timestam
 
 When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_months Rotating#rotation_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rotation_months Rotating#rotation_months}
 
 ---
 
@@ -1036,7 +1036,7 @@ RotationRfc3339 *string
 
 Configure the rotation timestamp with an [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format of the offset timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}
 
 ---
 
@@ -1052,7 +1052,7 @@ Number of years to add to the base timestamp to configure the rotation timestamp
 
 When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#rotation_years Rotating#rotation_years}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#rotation_years Rotating#rotation_years}
 
 ---
 
@@ -1068,7 +1068,7 @@ Arbitrary map of values that, when changed, will trigger a new base timestamp va
 
 These conditions recreate the resource in addition to other rotation arguments. See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/rotating#triggers Rotating#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/rotating#triggers Rotating#triggers}
 
 ---
 

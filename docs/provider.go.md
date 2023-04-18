@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`time`](https://www.terraform.io/docs/providers/time).
+Refer to the Terraform Registory for docs: [`time`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-time.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`time`](https://www.terraform.io/doc
 
 ### TimeProvider <a name="TimeProvider" id="@cdktf/provider-time.provider.TimeProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/time time}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs time}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.provider.TimeProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/provider"
 
 provider.NewTimeProvider(scope Construct, id *string, config TimeProviderConfig) TimeProvider
 ```
@@ -147,7 +147,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.provider.TimeProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/provider"
 
 provider.TimeProvider_IsConstruct(x interface{}) *bool
 ```
@@ -179,7 +179,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.provider.TimeProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/provider"
 
 provider.TimeProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -193,7 +193,7 @@ provider.TimeProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-time.provider.TimeProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/provider"
 
 provider.TimeProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.provider.TimeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v6/provider"
+import "github.com/cdktf/cdktf-provider-time-go/time/provider"
 
 &provider.TimeProviderConfig {
 	Alias: *string,
@@ -373,7 +373,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time#alias TimeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs#alias TimeProvider#alias}
 
 ---
 

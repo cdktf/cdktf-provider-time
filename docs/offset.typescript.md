@@ -1,6 +1,6 @@
 # `time_offset`
 
-Refer to the Terraform Registory for docs: [`time_offset`](https://www.terraform.io/docs/providers/time/r/offset).
+Refer to the Terraform Registory for docs: [`time_offset`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset).
 
 # `offset` Submodule <a name="`offset` Submodule" id="@cdktf/provider-time.offset"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`time_offset`](https://www.terraform
 
 ### Offset <a name="Offset" id="@cdktf/provider-time.offset.Offset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/time/r/offset time_offset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset time_offset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.offset.Offset.Initializer"></a>
 
@@ -395,7 +395,7 @@ offset.Offset.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-time.offset.Offset.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.offset.Offset.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.offset.Offset.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -514,10 +514,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-time.offset.Offset.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -856,7 +856,7 @@ const offsetConfig: offset.OffsetConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-time.offset.OffsetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-time.offset.OffsetConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-time.offset.OffsetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.OffsetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.OffsetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.OffsetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -886,10 +886,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-time.offset.OffsetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -953,7 +953,7 @@ public readonly baseRfc3339: string;
 
 Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#base_rfc3339 Offset#base_rfc3339}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#base_rfc3339 Offset#base_rfc3339}
 
 ---
 
@@ -967,7 +967,7 @@ public readonly offsetDays: number;
 
 Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_days Offset#offset_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_days Offset#offset_days}
 
 ---
 
@@ -981,7 +981,7 @@ public readonly offsetHours: number;
 
 Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_hours Offset#offset_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_hours Offset#offset_hours}
 
 ---
 
@@ -995,7 +995,7 @@ public readonly offsetMinutes: number;
 
 Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_minutes Offset#offset_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_minutes Offset#offset_minutes}
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly offsetMonths: number;
 
 Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_months Offset#offset_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_months Offset#offset_months}
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly offsetSeconds: number;
 
 Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_seconds Offset#offset_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_seconds Offset#offset_seconds}
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly offsetYears: number;
 
 Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#offset_years Offset#offset_years}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_years Offset#offset_years}
 
 ---
 
@@ -1053,7 +1053,7 @@ Arbitrary map of values that, when changed, will trigger a new base timestamp va
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time/r/offset#triggers Offset#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#triggers Offset#triggers}
 
 ---
 
