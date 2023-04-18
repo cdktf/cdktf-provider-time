@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`time`](https://www.terraform.io/docs/providers/time).
+Refer to the Terraform Registory for docs: [`time`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-time.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`time`](https://www.terraform.io/doc
 
 ### TimeProvider <a name="TimeProvider" id="@cdktf/provider-time.provider.TimeProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/time time}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs time}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.provider.TimeProvider.Initializer"></a>
 
@@ -373,7 +373,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/time#alias TimeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs#alias TimeProvider#alias}
 
 ---
 
