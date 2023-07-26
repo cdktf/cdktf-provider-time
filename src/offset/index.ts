@@ -14,49 +14,49 @@ import * as cdktf from 'cdktf';
 export interface OffsetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#base_rfc3339 Offset#base_rfc3339}
   */
   readonly baseRfc3339?: string;
   /**
   * Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_days Offset#offset_days}
   */
   readonly offsetDays?: number;
   /**
   *  Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_hours Offset#offset_hours}
   */
   readonly offsetHours?: number;
   /**
   * Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_minutes Offset#offset_minutes}
   */
   readonly offsetMinutes?: number;
   /**
   * Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_months Offset#offset_months}
   */
   readonly offsetMonths?: number;
   /**
   * Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_seconds Offset#offset_seconds}
   */
   readonly offsetSeconds?: number;
   /**
   * Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_years Offset#offset_years}
   */
   readonly offsetYears?: number;
   /**
   * Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. See [the main provider documentation](../index.md) for more information.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#triggers Offset#triggers}
   */
   readonly triggers?: { [key: string]: string };

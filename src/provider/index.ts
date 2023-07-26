@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface TimeProviderConfig {
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs#alias TimeProvider#alias}
   */
   readonly alias?: string;
