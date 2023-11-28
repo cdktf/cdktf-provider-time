@@ -1,7 +1,3 @@
-# `time_sleep`
-
-Refer to the Terraform Registory for docs: [`time_sleep`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep).
-
 # `sleep` Submodule <a name="`sleep` Submodule" id="@cdktf/provider-time.sleep"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

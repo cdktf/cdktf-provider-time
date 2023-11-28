@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`time`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-time.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
