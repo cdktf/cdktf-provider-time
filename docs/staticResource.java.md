@@ -1,7 +1,3 @@
-# `time_static`
-
-Refer to the Terraform Registory for docs: [`time_static`](https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/static).
-
 # `staticResource` Submodule <a name="`staticResource` Submodule" id="@cdktf/provider-time.staticResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
