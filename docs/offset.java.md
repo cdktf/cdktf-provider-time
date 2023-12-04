@@ -4,7 +4,7 @@
 
 ### Offset <a name="Offset" id="@cdktf/provider-time.offset.Offset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset time_offset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset time_offset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.offset.Offset.Initializer"></a>
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#base_rfc3339 Offset#base_rfc3339}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#base_rfc3339 Offset#base_rfc3339}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_days Offset#offset_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_days Offset#offset_days}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_hours Offset#offset_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_hours Offset#offset_hours}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_minutes Offset#offset_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_minutes Offset#offset_minutes}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_months Offset#offset_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_months Offset#offset_months}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_seconds Offset#offset_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_seconds Offset#offset_seconds}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_years Offset#offset_years}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_years Offset#offset_years}
 
 ---
 
@@ -194,7 +194,7 @@ Arbitrary map of values that, when changed, will trigger a new base timestamp va
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#triggers Offset#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#triggers Offset#triggers}
 
 ---
 
@@ -670,7 +670,7 @@ The construct id used in the generated config for the Offset to import.
 
 The id of the existing Offset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.lang.String getBaseRfc3339();
 
 Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#base_rfc3339 Offset#base_rfc3339}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#base_rfc3339 Offset#base_rfc3339}
 
 ---
 
@@ -1286,7 +1286,7 @@ public java.lang.Number getOffsetDays();
 
 Number of days to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_days Offset#offset_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_days Offset#offset_days}
 
 ---
 
@@ -1300,7 +1300,7 @@ public java.lang.Number getOffsetHours();
 
 Number of hours to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_hours Offset#offset_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_hours Offset#offset_hours}
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.Number getOffsetMinutes();
 
 Number of minutes to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_minutes Offset#offset_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_minutes Offset#offset_minutes}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.Number getOffsetMonths();
 
 Number of months to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_months Offset#offset_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_months Offset#offset_months}
 
 ---
 
@@ -1342,7 +1342,7 @@ public java.lang.Number getOffsetSeconds();
 
 Number of seconds to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_seconds Offset#offset_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_seconds Offset#offset_seconds}
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.Number getOffsetYears();
 
 Number of years to offset the base timestamp. At least one of the 'offset_' arguments must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#offset_years Offset#offset_years}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#offset_years Offset#offset_years}
 
 ---
 
@@ -1372,7 +1372,7 @@ Arbitrary map of values that, when changed, will trigger a new base timestamp va
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/offset#triggers Offset#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/offset#triggers Offset#triggers}
 
 ---
 

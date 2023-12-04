@@ -4,7 +4,7 @@
 
 ### TimeProvider <a name="TimeProvider" id="@cdktf/provider-time.provider.TimeProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs time}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs time}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.provider.TimeProvider.Initializer"></a>
 
@@ -233,7 +233,7 @@ The construct id used in the generated config for the TimeProvider to import.
 
 The id of the existing TimeProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -412,7 +412,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs#alias TimeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs#alias TimeProvider#alias}
 
 ---
 
