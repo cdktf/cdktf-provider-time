@@ -4,7 +4,7 @@
 
 ### Sleep <a name="Sleep" id="@cdktf/provider-time.sleep.Sleep"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep time_sleep}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep time_sleep}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.sleep.Sleep.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource creation. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#create_duration Sleep#create_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#create_duration Sleep#create_duration}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource destroy. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. This value or any updates to it must be successfully applied into the Terraform state before destroying this resource to take effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#destroy_duration Sleep#destroy_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#destroy_duration Sleep#destroy_duration}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#triggers Sleep#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#triggers Sleep#triggers}
 
 ---
 
@@ -619,7 +619,7 @@ The construct id used in the generated config for the Sleep to import.
 
 The id of the existing Sleep that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,7 +1009,7 @@ create_duration: str
 
 [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource creation. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#create_duration Sleep#create_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#create_duration Sleep#create_duration}
 
 ---
 
@@ -1023,7 +1023,7 @@ destroy_duration: str
 
 [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource destroy. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. This value or any updates to it must be successfully applied into the Terraform state before destroying this resource to take effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#destroy_duration Sleep#destroy_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#destroy_duration Sleep#destroy_duration}
 
 ---
 
@@ -1039,7 +1039,7 @@ triggers: typing.Mapping[str]
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.1/docs/resources/sleep#triggers Sleep#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs/resources/sleep#triggers Sleep#triggers}
 
 ---
 
