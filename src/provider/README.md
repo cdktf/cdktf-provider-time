@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`time`](https://registry.terraform.io/providers/hashicorp/time/0.9.2/docs).
+Refer to the Terraform Registory for docs: [`time`](https://registry.terraform.io/providers/hashicorp/time/0.10.0/docs).
