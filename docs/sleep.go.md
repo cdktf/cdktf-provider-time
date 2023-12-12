@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.10.
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.sleep.Sleep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/v9/sleep"
 
 sleep.NewSleep(scope Construct, id *string, config SleepConfig) Sleep
 ```
@@ -392,7 +392,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.sleep.Sleep.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/v9/sleep"
 
 sleep.Sleep_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.sleep.Sleep.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/v9/sleep"
 
 sleep.Sleep_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ sleep.Sleep_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-time.sleep.Sleep.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/v9/sleep"
 
 sleep.Sleep_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ sleep.Sleep_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-time.sleep.Sleep.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/v9/sleep"
 
 sleep.Sleep_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.sleep.SleepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/v9/sleep"
 
 &sleep.SleepConfig {
 	Connection: interface{},
