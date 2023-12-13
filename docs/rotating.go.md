@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.10.
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.rotating.Rotating.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.NewRotating(scope Construct, id *string, config RotatingConfig) Rotating
 ```
@@ -427,7 +427,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.rotating.Rotating.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.rotating.Rotating.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ rotating.Rotating_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-time.rotating.Rotating.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ rotating.Rotating_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-time.rotating.Rotating.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 rotating.Rotating_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -980,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.rotating.RotatingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/rotating"
+import "github.com/cdktf/cdktf-provider-time-go/time/rotating"
 
 &rotating.RotatingConfig {
 	Connection: interface{},
