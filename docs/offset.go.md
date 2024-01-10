@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.10.
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.offset.Offset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/offset"
+import "github.com/cdktf/cdktf-provider-time-go/time/offset"
 
 offset.NewOffset(scope Construct, id *string, config OffsetConfig) Offset
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-time.offset.Offset.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-time.offset.Offset.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-time.offset.Offset.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-time.offset.Offset.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-time.offset.Offset.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-time.offset.Offset.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-time.offset.Offset.toMetadata"></a>
 
@@ -427,7 +434,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.offset.Offset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/offset"
+import "github.com/cdktf/cdktf-provider-time-go/time/offset"
 
 offset.Offset_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.offset.Offset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/offset"
+import "github.com/cdktf/cdktf-provider-time-go/time/offset"
 
 offset.Offset_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ offset.Offset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-time.offset.Offset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/offset"
+import "github.com/cdktf/cdktf-provider-time-go/time/offset"
 
 offset.Offset_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +494,7 @@ offset.Offset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-time.offset.Offset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/offset"
+import "github.com/cdktf/cdktf-provider-time-go/time/offset"
 
 offset.Offset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.offset.OffsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v9/offset"
+import "github.com/cdktf/cdktf-provider-time-go/time/offset"
 
 &offset.OffsetConfig {
 	Connection: interface{},

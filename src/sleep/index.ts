@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/time/0.10.0/docs/resources/sleep
 // generated from terraform resource schema
 
@@ -155,5 +150,31 @@ export class Sleep extends cdktf.TerraformResource {
       destroy_duration: cdktf.stringToTerraform(this._destroyDuration),
       triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      create_duration: {
+        value: cdktf.stringToHclTerraform(this._createDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destroy_duration: {
+        value: cdktf.stringToHclTerraform(this._destroyDuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      triggers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
