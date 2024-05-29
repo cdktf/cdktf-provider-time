@@ -4,12 +4,12 @@
 
 ### Sleep <a name="Sleep" id="@cdktf/provider-time.sleep.Sleep"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.11.1/docs/resources/sleep time_sleep}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/sleep time_sleep}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.sleep.Sleep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
 
 sleep.NewSleep(scope Construct, id *string, config SleepConfig) Sleep
 ```
@@ -399,7 +399,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.sleep.Sleep.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
 
 sleep.Sleep_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.sleep.Sleep.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
 
 sleep.Sleep_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ sleep.Sleep_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-time.sleep.Sleep.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
 
 sleep.Sleep_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ sleep.Sleep_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-time.sleep.Sleep.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
 
 sleep.Sleep_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Sleep to import.
 
 The id of the existing Sleep that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.11.1/docs/resources/sleep#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/sleep#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.sleep.SleepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/sleep"
+import "github.com/cdktf/cdktf-provider-time-go/time/sleep"
 
 &sleep.SleepConfig {
 	Connection: interface{},
@@ -878,7 +878,7 @@ CreateDuration *string
 
 [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource creation. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.1/docs/resources/sleep#create_duration Sleep#create_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/sleep#create_duration Sleep#create_duration}
 
 ---
 
@@ -892,7 +892,7 @@ DestroyDuration *string
 
 [Time duration](https://golang.org/pkg/time/#ParseDuration) to delay resource destroy. For example, `30s` for 30 seconds or `5m` for 5 minutes. Updating this value by itself will not trigger a delay. This value or any updates to it must be successfully applied into the Terraform state before destroying this resource to take effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.1/docs/resources/sleep#destroy_duration Sleep#destroy_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/sleep#destroy_duration Sleep#destroy_duration}
 
 ---
 
@@ -908,7 +908,7 @@ Triggers *map[string]*string
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.1/docs/resources/sleep#triggers Sleep#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/sleep#triggers Sleep#triggers}
 
 ---
 
