@@ -4,12 +4,12 @@
 
 ### StaticResource <a name="StaticResource" id="@cdktf/provider-time.staticResource.StaticResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/static time_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.12.0/docs/resources/static time_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-time.staticResource.StaticResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/staticresource"
+import "github.com/cdktf/cdktf-provider-time-go/time/staticresource"
 
 staticresource.NewStaticResource(scope Construct, id *string, config StaticResourceConfig) StaticResource
 ```
@@ -392,7 +392,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-time.staticResource.StaticResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/staticresource"
+import "github.com/cdktf/cdktf-provider-time-go/time/staticresource"
 
 staticresource.StaticResource_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-time.staticResource.StaticResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/staticresource"
+import "github.com/cdktf/cdktf-provider-time-go/time/staticresource"
 
 staticresource.StaticResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ staticresource.StaticResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-time.staticResource.StaticResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/staticresource"
+import "github.com/cdktf/cdktf-provider-time-go/time/staticresource"
 
 staticresource.StaticResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ staticresource.StaticResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-time.staticResource.StaticResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/staticresource"
+import "github.com/cdktf/cdktf-provider-time-go/time/staticresource"
 
 staticresource.StaticResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the StaticResource to import.
 
 The id of the existing StaticResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.12.0/docs/resources/static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-time.staticResource.StaticResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-time-go/time/v10/staticresource"
+import "github.com/cdktf/cdktf-provider-time-go/time/staticresource"
 
 &staticresource.StaticResourceConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ Rfc3339 *string
 
 Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/static#rfc3339 StaticResource#rfc3339}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.12.0/docs/resources/static#rfc3339 StaticResource#rfc3339}
 
 ---
 
@@ -940,7 +940,7 @@ Arbitrary map of values that, when changed, will trigger a new base timestamp va
 
 See [the main provider documentation](../index.md) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.11.2/docs/resources/static#triggers StaticResource#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.12.0/docs/resources/static#triggers StaticResource#triggers}
 
 ---
 
