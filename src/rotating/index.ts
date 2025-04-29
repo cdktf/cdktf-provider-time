@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating
+// https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +10,55 @@ export interface RotatingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Base timestamp in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format (see [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) e.g., `YYYY-MM-DDTHH:MM:SSZ`). Defaults to the current time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rfc3339 Rotating#rfc3339}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rfc3339 Rotating#rfc3339}
   */
   readonly rfc3339?: string;
   /**
   * Number of days to add to the base timestamp to configure the rotation timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rotation_days Rotating#rotation_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rotation_days Rotating#rotation_days}
   */
   readonly rotationDays?: number;
   /**
   * Number of hours to add to the base timestamp to configure the rotation timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rotation_hours Rotating#rotation_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rotation_hours Rotating#rotation_hours}
   */
   readonly rotationHours?: number;
   /**
   * Number of minutes to add to the base timestamp to configure the rotation timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rotation_minutes Rotating#rotation_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rotation_minutes Rotating#rotation_minutes}
   */
   readonly rotationMinutes?: number;
   /**
   * Number of months to add to the base timestamp to configure the rotation timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rotation_months Rotating#rotation_months}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rotation_months Rotating#rotation_months}
   */
   readonly rotationMonths?: number;
   /**
   * Configure the rotation timestamp with an [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.8) format of the offset timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rotation_rfc3339 Rotating#rotation_rfc3339}
   */
   readonly rotationRfc3339?: string;
   /**
   * Number of years to add to the base timestamp to configure the rotation timestamp. When the current time has passed the rotation timestamp, the resource will trigger recreation. At least one of the 'rotation_' arguments must be configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#rotation_years Rotating#rotation_years}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#rotation_years Rotating#rotation_years}
   */
   readonly rotationYears?: number;
   /**
   * Arbitrary map of values that, when changed, will trigger a new base timestamp value to be saved. These conditions recreate the resource in addition to other rotation arguments. See [the main provider documentation](../index.md) for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#triggers Rotating#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#triggers Rotating#triggers}
   */
   readonly triggers?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating time_rotating}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating time_rotating}
 */
 export class Rotating extends cdktf.TerraformResource {
 
@@ -79,7 +74,7 @@ export class Rotating extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Rotating resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Rotating to import
-  * @param importFromId The id of the existing Rotating that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Rotating that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Rotating to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -91,7 +86,7 @@ export class Rotating extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.13.0/docs/resources/rotating time_rotating} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/time/0.13.1/docs/resources/rotating time_rotating} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +97,7 @@ export class Rotating extends cdktf.TerraformResource {
       terraformResourceType: 'time_rotating',
       terraformGeneratorMetadata: {
         providerName: 'time',
-        providerVersion: '0.13.0',
+        providerVersion: '0.13.1',
         providerVersionConstraint: '~> 0.7'
       },
       provider: config.provider,
